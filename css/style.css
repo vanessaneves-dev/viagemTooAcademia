@@ -140,22 +140,20 @@ footer {
   position: relative;
   text-align: center;
   color: #fff;
-  padding: 0; /* Remove o padding para que a imagem ocupe todo o espaço */
-  overflow: hidden; /* Esconde qualquer excesso de conteúdo que saia dos limites do footer */
-  height: 200px; /* Defina uma altura fixa ou ajustável conforme necessário */
+  padding: 0; 
+  overflow: hidden; 
+  height: 200px; 
 }
 
-/* Estilo para a imagem de fundo */
 .imgFooter {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-   object-fit: cover; /* Ajusta a imagem para cobrir todo o footer sem distorção */
-  z-index: -1; /* Coloca a imagem atrás do texto */
+   object-fit: cover;
+  z-index: -1; 
 }
 
-/* Sobreposição escura para melhorar a legibilidade do texto */
 footer::before {
   content: "";
   position: absolute;
@@ -163,15 +161,13 @@ footer::before {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: rgba(0, 0, 0, 0.5); Sobreposição preta com 50% de opacidade */
-  z-index: 0; /* Mantém a sobreposição atrás do texto, mas acima da imagem */
+   z-index: 0; 
 }
 
-/* Estilos para o texto no footer */
 #textFooter {
   position: relative;
-  z-index: 1; /* Garante que o texto fique acima da imagem e da sobreposição */
-  font-size: 1.2rem; /* Ajuste o tamanho do texto conforme necessário */
+  z-index: 1; 
+  font-size: 1.2rem; 
   margin: 0;
-  padding-top: 180px; /* Ajuste o padding para centralizar o texto verticalmente */
+  padding-top: 180px; 
 }
